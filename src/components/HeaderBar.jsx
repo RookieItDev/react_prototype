@@ -1,11 +1,12 @@
 import react, { useState } from "react";
 import { Box, IconButton, Menu, MenuItem } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsRounded";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsRounded";
+import PersonOutlinedIcon from "@mui/icons-material/PersonRounded";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
+import { bgcolor } from "@mui/system";
 
 const HeaderBar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -19,7 +20,7 @@ const HeaderBar = () => {
   };
   return (
       
-    <Box display="flex" justifyContent="space-between" p={2}>
+    <Box display="flex" style={{backgroundColor:'white'}} justifyContent="space-between" p={1}>
       {/* search  */}
       <Box display="flex" borderRadius="3px" backgroundColor="#F5EFE7">
         {/* <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
@@ -30,13 +31,13 @@ const HeaderBar = () => {
       {/* icons */}
       <Box display="flex">
         <IconButton>
-          <NotificationsOutlinedIcon />
+          <NotificationsOutlinedIcon style={{color:"black"}} />
         </IconButton>
         <IconButton>
-          <SettingsOutlinedIcon />
+          <SettingsOutlinedIcon style={{color:"black"}} />
         </IconButton>
         <IconButton>
-          <PersonOutlinedIcon onClick={handleMenu} />
+          <PersonOutlinedIcon style={{color:"black"}} onClick={handleMenu} />
           <Menu
             id="menu-appbar"
             anchorEl={anchorEl}
