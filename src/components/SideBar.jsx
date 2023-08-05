@@ -83,7 +83,7 @@ const SideBar = () => {
                 <MenuItem style={{backgroundColor:"#132644",color:"white"}} icon={<HomeOutlinedIcon/>}>Dashboard</MenuItem>
               </Link>
 
-              <SubMenu icon={<MapOutlinedIcon />} style={{backgroundColor:"#132644",color:"white"}}  label="Data">
+              <SubMenu icon={<MapOutlinedIcon />} style={{backgroundColor:"#132644",color:"white"}}  label="ข้อมูล">
                 <Link to={"/admin/viewtable"} className="menu-bars">
                   <MenuItem style={{backgroundColor:"#132644",color:"white"}} icon={<TableViewIcon />}>
                     {" "}
