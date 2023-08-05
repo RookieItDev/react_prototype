@@ -11,10 +11,26 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Checkbox from '@mui/material/Checkbox';
+import InputLabel from '@mui/material/InputLabel';
+
+// Card
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+
+
+const bull = (
+  <Box
+    component="span"
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+  >
+    •
+  </Box>
+);
+// End
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-
-
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -91,6 +107,57 @@ export default function Home() {
       <Checkbox {...label} />
       <Checkbox {...label} disabled />
       <Checkbox {...label} disabled checked />
+      <br /><br />
+      {/* Card */}
+
+      <Card sx={{ minWidth: 275 }}>
+      <CardContent>
+      {/* <InputLabel>FirstName</InputLabel>
+       <TextField size="small"  variant="outlined" type="email"></TextField> */}
+       <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField
+        id="outlined-controlled"
+        label="Controlled"
+        value={name}
+        size="small"
+        onChange={(event) => {
+          setName(event.target.value);
+        }}
+      />
+      <TextField
+        id="outlined-uncontrolled"
+        label="FirstName"
+        size="small"
+        defaultValue="foo"
+      />
+       <TextField
+        id="outlined-uncontrolled"
+        label="LastName"
+        size="small"
+        defaultValue="foo"
+      />
+       <TextField
+        id="outlined-uncontrolled"
+        label="Address"
+        size="small"
+        defaultValue="foo"
+      />
+     <Button style={{width:10}} variant="contained" color="success">Save</Button>
+    </Box>
+    
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+
     </ThemeProvider>
     </div>
 
