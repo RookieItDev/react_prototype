@@ -149,7 +149,7 @@ export default function Home() {
         size="small"
         defaultValue="foo"
       />
-     <Button style={{width:10}} variant="contained" color="success">Save</Button>
+     <Button style={{width:10,backgroundColor:'LightSlateGrey',color:'white'}} variant="contained">Submit</Button>
     </Box>
     
       </CardContent>
