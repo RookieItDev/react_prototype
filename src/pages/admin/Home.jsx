@@ -149,7 +149,14 @@ export default function Home() {
         size="small"
         defaultValue="foo"
       />
-     <Button style={{width:10,backgroundColor:'LightSlateGrey',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'#132644',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'darkblue',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'darkcyan',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'lightseagreen',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'lightslategray',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'midnightblue',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'slategray',color:'white'}} variant="contained">Submit</Button>
+     <Button style={{width:10,backgroundColor:'tomato',color:'white'}} variant="contained">Submit</Button>
     </Box>
     
       </CardContent>
