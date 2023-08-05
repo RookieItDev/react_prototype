@@ -47,7 +47,6 @@ const SideBar = () => {
           <div style={{ flex: 1, marginBottom: "32px" }}>
             <Menu iconShape="square">
               {/* LOGO */}
-              <img src={Logo} style={{height:60,width:200}} alt="" />
               <MenuItem
                 onClick={() => setisCollapsed(!isCollapsed)}
                 icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
@@ -62,8 +61,10 @@ const SideBar = () => {
                     alignItems="center"
                     ml="15px"
                   >
+              <img src={Logo} style={{height:60,width:200}} alt="" />
+
                     <Typography></Typography>
-                    <IconButton onClick={() => setisCollapsed(!isCollapsed)}>
+                      <IconButton onClick={() => setisCollapsed(!isCollapsed)}>
                       <MenuOutlinedIcon />
                     </IconButton>
                   </Box>
